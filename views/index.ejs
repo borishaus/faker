@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random People</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Birthdate</th>
+      <th>Last 4 SSN</th>
+      <th>Total Sales</th>
+      <th>Gender</th>
+      <th>Largest Purchase</th>
+      <th>Favorite Book ID</th>
+    </tr>
+    <% people.forEach(function(person) { %>
+      <tr>
+        <td><%= person.Name %></td>
+        <td><%= person.Birthdate %></td>
+        <td><%= person['Last 4 SSN'] %></td>
+        <td><%= person['Total Sales'] %></td>
+        <td><%= person.Gender %></td>
+        <td><%= person['Largest Purchase'] %></td>
+        <td><%= person['Favorite Book ID'] %></td>
+      </tr>
+    <% }); %>
+  </table>
+</body>
+</html>
