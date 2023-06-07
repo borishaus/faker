@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
   }
 
   // Generate data for 100000 people
-  for (let i = 0; i < 100000; i++) {
+  for (let i = 0; i < 1000000; i++) {
     let personID = i;
     let firstName = faker.name.firstName();
     let lastName = faker.name.lastName();
